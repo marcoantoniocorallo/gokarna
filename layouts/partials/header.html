@@ -1,17 +1,20 @@
 <header class="header">
     <nav class="header-nav">
 
-        {{ if isset .Site.Params "avatarurl" }}
+        
+        {{ if not (eq .RelPermalink "/") }}
         <div class="avatar">
             <a href="{{ .Site.BaseURL }}">
-                <img src='{{ .Scratch.Get "avatarImgSrc" }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}">
+                <img src='../../{{ .Site.Params.AvatarURL }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}">
             </a>
         </div>
-        {{ end }}
+
 
         <div class="nav-title">
-            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Params.Minititle }}</a>
         </div>
+            
+        {{ end }}
 
         <div class="nav-links">
             {{ range .Site.Menus.main }}

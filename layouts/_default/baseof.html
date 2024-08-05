@@ -12,10 +12,24 @@
             // Immediately set theme on page load
             setThemeByUserPref();
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         {{- partial "header.html" . -}}
         <main id="content">
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
     </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var options = {
+            strings: {{ .Site.Params.descriptionText }},
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        };
+
+        var typed = new Typed("#typed-text", options);
+    });
+</script>
 </html>

@@ -2,6 +2,18 @@
 
 Gokarna is an opinionated theme with a focus on minimalism and simplicity.
 
+This repository includes few changes with respect to the original one:
+
+- The link to the index page is visible everywhere but the page itself;
+
+- The toggle theme also changes the accent color attribute;
+
+- The symbol in the footer is copyleft, not more copyright;
+
+- The *"posts"* page template includes columns indicating the language and an optional link to the slides;
+
+- Typed-cursor description in the home;
+
 ### Authors:
 
 1. [Yash Mehrotra](https://yashmehrotra.com)
@@ -31,23 +43,21 @@ Gokarna is an opinionated theme with a focus on minimalism and simplicity.
 
 ### Homepage
 
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-home.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-home.png "Dark mode")
+| Light Mode                                                                                                                 | Dark Mode                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
+| ![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-home.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-home.png "Dark mode") |
 
 ### Post page
 
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-post.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-post.png "Dark mode")
+| Light Mode                                                                                                                 | Dark Mode                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
+| ![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-post.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-post.png "Dark mode") |
 
 ### List page
 
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-list.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-list.png "Dark mode")
-
-
+| Light Mode                                                                                                                 | Dark Mode                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
+| ![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-list.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-list.png "Dark mode") |
 
 ## Installation
 

@@ -1,24 +1,37 @@
 <div class="post container">
     <div class="post-header-section">
-        <h1>{{ .Title }}</h1>
+        
         <small role="doc-subtitle">{{ .Description }}</small>
-        <p class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}
-        {{ if lt .Date .Lastmod }} | Updated {{ dateFormat .Site.Params.dateFormat .Lastmod }}{{ end }}
-        </p>
-
         <ul class="post-tags">
         {{ range .Params.tags }}
             <li class="post-tag"><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}
         </ul>
+        <p class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}
+            {{ if lt .Date .Lastmod }} | Updated {{ dateFormat .Site.Params.dateFormat .Lastmod }}{{ end }}
+        </p>
+    
     </div>
 
+    {{ if not (eq .Params.Client "") }}
+        <div class="post-content">    
+            <h4>{{ .Params.Disclosure1 }} <i>{{ .Params.Client }}</i>
+            and published <a href={{ .Params.Published }}>here</a>.
+            <br>{{ .Params.Disclosure2 }}
+            </h4>
+        </div>
+    {{ end }}
     <div class="post-content">
         {{ .Content }}
         {{ if .Site.Config.Services.Disqus.Shortname }}
         <div class="post-comments">
             {{ template "_internal/disqus.html" . }}
         </div>
+        {{ end }}
+        {{ if hasPrefix .RelPermalink "/presentations/" }}
+        <a href={{ .Params.Slides }} target="_blank">
+            You can see the slides of this presentation here.
+        </a>
         {{ end }}
     </div>
 

@@ -97,6 +97,8 @@ function setThemeByUserPref() {
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark': 'light');
     const darkThemeToggles = document.querySelectorAll('.dark-theme-toggle');
     setTheme(savedTheme, darkThemeToggles);
+    if (savedTheme == 'dark') document.querySelector(':root').style.setProperty('--accent-color', "#FF4D4D");
+    else if (savedTheme == 'light') document.querySelector(':root').style.setProperty('--accent-color', "#08F");
     darkThemeToggles.forEach(el => el.addEventListener('click', toggleTheme, {capture: true}))
 }
 
@@ -104,8 +106,10 @@ function toggleTheme(event) {
     toggleIcon = event.currentTarget.querySelector("a svg.feather");
     if (toggleIcon.classList[1] === THEME_TO_ICON_CLASS.dark) {
         setThemeAndStore('light', [event.currentTarget]);
+        document.querySelector(':root').style.setProperty('--accent-color', "#08F");
     } else if (toggleIcon.classList[1] === THEME_TO_ICON_CLASS.light) {
         setThemeAndStore('dark', [event.currentTarget]);
+        document.querySelector(':root').style.setProperty('--accent-color', "#FF4D4D");
     }
 }
 
@@ -121,3 +125,4 @@ function setThemeAndStore(themeToSet, targets) {
     setTheme(themeToSet, targets);
     localStorage.setItem(THEME_PREF_STORAGE_KEY, themeToSet);
 }
+

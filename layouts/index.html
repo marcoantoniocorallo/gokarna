@@ -8,8 +8,13 @@
 
     <h1>{{ .Site.Title }}</h1>
     {{ if isset .Site.Params "description" }}
-        <h3>{{ .Site.Params.Description }}</h3>
+    <h3>
+    	<div class="description">
+	<span id="typed-text"></span>
+    </h3>
+</div>
     {{ end }}
+
 
 </section>
 
