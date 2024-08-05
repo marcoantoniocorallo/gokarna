@@ -2,17 +2,19 @@
 
 Gokarna is an opinionated theme with a focus on minimalism and simplicity.
 
-This repository includes few changes with respect to the original one:
+### This repository contains few changes from the original:
 
-- The link to the index page is visible everywhere but the page itself;
+- The link to the index page is visible everywhere except on the page itself;
 
-- The toggle theme also changes the accent color attribute;
+- The toggle theme also changes the accent colour attribute;
 
 - The symbol in the footer is copyleft, not more copyright;
 
-- The *"posts"* page template includes columns indicating the language and an optional link to the slides;
+- The *posts* page template includes language columns and an optional link to the slides;
 
-- Typed-cursor description in the home;
+- The *typed-cursor* description in the home page;
+
+Changes are published under the GPL3 licence, and this repository is a submodule of my personal website.
 
 ### Authors:
 
